@@ -1,11 +1,11 @@
 # Site settings
 title: Learn Italian Easily
 description:  
-cover: assets/images/radhakrishna.png
-logo: assets/images/logo.png
-favicon: assets/images/favicon.png
+cover: ../assets/images/radhakrishna.png
+logo: ../assets/images/logo.png
+favicon: ../assets/images/favicon.png
 baseurl: "" # the subpath of your site, e.g. /blog/ or / for root
-url: "https://samanyougarg.com" # the base hostname & protocol for your site
+url: "https://italian-teacher.github.io" # the base hostname & protocol for your site
 
 pagination:
 
