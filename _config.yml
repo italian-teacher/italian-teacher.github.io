@@ -1,60 +1,69 @@
 # Site settings
 title: Learn Italian Easily
-description:  
-cover: ../assets/images/radhakrishna.png
-logo: ../assets/images/logo.png
-favicon: ../assets/images/favicon.png
-baseurl: "" # the subpath of your site, e.g. /blog/ or / for root
-url: "https://italian-teacher.github.io" # the base hostname & protocol for your site
+description: Learn Italian online with interactive vocabulary practice, themed lessons, and clear grammar explanations.
+cover: /assets/images/italy.webp
+logo: /assets/images/logo.webp
+favicon: /assets/images/favicon.png
+baseurl: "" # Set to empty for root deployment; change to "/blog" if hosted in a subpath
+url: "https://italian-teacher.github.io" # The base hostname & protocol for your site
+email: prap.mot@gmail.com # Add for contact forms or schema markup
 
+# SEO Settings
+keywords: learn Italian, Italian vocabulary, Italian grammar, Italian lessons online # Global site keywords
+lang: en # Primary language for the site
+author: # Default author for schema markup
+  name: Learn Italian Easily Team
+  email: prap.mot@gmail.com
+  url: https://italian-teacher.github.io
+
+# Pagination
 pagination:
+  enabled: true # Enable pagination for blog posts
+  debug: false # Set to true only for troubleshooting
+  per_page: 5 # Number of posts per page
+  permalink: /page/:num/ # URL structure for paginated pages
+  sort_reverse: true # Show newest posts first
+  sort_field: date # Sort by post date
 
-  # Site-wide kill switch, disabled here it doesn't run at all 
-  enabled: true
+# Social Media
+# facebook: learnitalianeasily # Update with actual Facebook handle
+# twitter: learnitalianeasily # Update with actual Twitter handle
+# github: italian-teacher # GitHub username for repository
+# instagram: learnitalianeasily # Add if applicable
+# linkedin: learn-italian-easily # Add if applicable
 
-  # Set to 'true' to enable pagination debugging. This can be enabled in the site config or only for individual pagination pages
-  debug: false
+# Additional Pages
+about: /about
+contact: /contact
+privacy-policy: /privacy-policy
+terms: /terms # Added for common SEO practice
 
-  per_page: 5
-
-# Social
-facebook: facebook
-twitter: twitter
-github:  github
-
-#Additional Pages
-about: about
-contact: contact
-privacy-policy: privacy-policy
-
-
-permalink: /:title
-
+# Permalinks
+permalink: /:title # Clean, SEO-friendly URLs (e.g., /food)
 
 # Google Analytics
-analytics_id: ""
+analytics_id: G-XXXXXX # Replace with your Google Analytics tracking ID (e.g., G-XXXXXX or UA-XXXXX-Y)
 
 # Build settings
 markdown: kramdown
-
 kramdown:
-  parse_block_html: true
+  parse_block_html: true # Allow HTML parsing in Markdown
 
 plugins:
-  - jekyll-paginate-v2
+  - jekyll-paginate-v2 # Pagination plugin
+  - jekyll-sitemap # Generates sitemap.xml for SEO
+  - jekyll-seo-tag # Adds SEO meta tags (title, description, social, etc.)
 
+# GitHub and Deployment Settings
+username: italian-teacher # GitHub username
+repo: italian-teacher.github.io # GitHub repository
+branch: master # Deployment branch
+relative_source: ../italian-teacher/ # Source directory for build
+destination: ../italian-teacher-pages/ # Output directory for built site
+production_url: https://italian-teacher.github.io/ # Live site URL
+source_url: https://github.com/italian-teacher/italian-teacher.github.io # Source repository URL
 
-# Settings for rake task
-safe: False
-lsi: False
-username: samanyougarg #github username
-repo: hanuman #github repository
-branch: master #branch
-relative_source: ../hanuman/ #source directory
-destination: ../hanuman-pages/ #destination directory
-production_url:  https://samanyougarg.com/
-source_url:  https://github.com/samanyougarg/hanuman #source repository url
-
+# Exclusions
 exclude:
   - README.md
   - Rakefile
@@ -64,3 +73,15 @@ exclude:
   - "*.Rmd"
   - vendor
   - .travis.yml
+
+# Build Optimizations
+safe: false # Disable safe mode for faster builds
+lsi: false # Disable latent semantic indexing for faster builds
+incremental: true # Enable incremental builds for faster regeneration
+
+# Sitemap Settings (for jekyll-sitemap)
+sitemap:
+  exclude:
+    - /Gemfile
+    - /Gemfile.lock
+    - /Rakefile

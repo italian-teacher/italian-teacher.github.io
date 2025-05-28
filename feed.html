@@ -1,0 +1,43 @@
+---
+layout: null
+---
+<footer class="ampstart-footer p3">
+  <div class="container">
+    <nav class="ampstart-footer-nav">
+      <ul class="list-reset flex wrap">
+        <li class="px1"><a href="{{ site.baseurl }}/about">About</a></li>
+        <li class="px1"><a href="{{ site.baseurl }}/contact">Contact</a></li>
+        <li class="px1"><a href="{{ site.baseurl }}/privacy-policy">Privacy Policy</a></li>
+        <li class="px1"><a href="{{ site.baseurl }}/terms">Terms</a></li>
+        <li class="px1"><a href="https://twitter.com/{{ site.twitter | escape }}">Twitter</a></li>
+        <li class="px1"><a href="https://www.facebook.com/{{ site.facebook | escape }}">Facebook</a></li>
+        <li class="px1"><a href="https://github.com/{{ site.github | escape }}">GitHub</a></li>
+      </ul>
+    </nav>
+    <p class="center">© {{ 'now' | date: '%Y' }} {{ site.title | escape }}. All rights reserved.</p>
+    <div class="social-share center">
+      <amp-social-share type="twitter" width="44" height="44"></amp-social-share>
+      <amp-social-share type="facebook" width="44" height="44" data-param-app_id="YOUR_FB_APP_ID"></amp-social-share>
+      <amp-social-share type="email" width="44" height="44"></amp-social-share>
+    </div>
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "{{ site.title | escape }}",
+      "url": "{{ site.url }}{{ site.baseurl }}",
+      "logo": "{{ site.url }}{{ site.baseurl }}{{ site.logo }}",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "{{ site.email | escape }}",
+        "contactType": "Customer Support"
+      },
+      "sameAs": [
+        "https://www.facebook.com/{{ site.facebook | escape }}",
+        "https://twitter.com/{{ site.twitter | escape }}",
+        "https://github.com/{{ site.github | escape }}"
+      ]
+    }
+    </script>
+  </div>
+</footer>

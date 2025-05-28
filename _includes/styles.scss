@@ -725,3 +725,22 @@ body > figure > figcaption > header > h2 {
 .ampstart-read-text{
     background:$theme-color
 }
+
+.ampstart-footer {
+  background: #f8f8f8;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+.ampstart-footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.ampstart-footer-nav li {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+.social-share {
+  margin: 1rem 0;
+}
