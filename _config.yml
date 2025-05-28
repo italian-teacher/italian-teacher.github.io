@@ -42,7 +42,7 @@ terms: /terms # Added for common SEO practice
 permalink: /:title # Clean, SEO-friendly URLs (e.g., /food)
 
 # Google Analytics
-analytics_id: G-XXXXXX # Replace with your Google Analytics tracking ID (e.g., G-XXXXXX or UA-XXXXX-Y)
+analytics_id: G-NRQ6948GVS 
 
 # Build settings
 markdown: kramdown
