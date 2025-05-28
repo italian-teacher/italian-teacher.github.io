@@ -6,14 +6,14 @@ logo: /assets/images/logo.webp
 favicon: /assets/images/favicon.png
 baseurl: "" # Set to empty for root deployment; change to "/blog" if hosted in a subpath
 url: "https://italian-teacher.github.io" # The base hostname & protocol for your site
-email: prap.mot@gmail.com # Add for contact forms or schema markup
+email: italianteacher.io@gmail.com # Add for contact forms or schema markup
 
 # SEO Settings
 keywords: learn Italian, Italian vocabulary, Italian grammar, Italian lessons online # Global site keywords
 lang: en # Primary language for the site
 author: # Default author for schema markup
   name: Learn Italian Easily Team
-  email: prap.mot@gmail.com
+  email: italianteacher.io@gmail.com
   url: https://italian-teacher.github.io
 
 # Pagination
@@ -55,13 +55,13 @@ plugins:
   - jekyll-seo-tag # Adds SEO meta tags (title, description, social, etc.)
 
 # GitHub and Deployment Settings
-username: italian-teacher # GitHub username
-repo: italian-teacher.github.io # GitHub repository
-branch: master # Deployment branch
-relative_source: ../italian-teacher/ # Source directory for build
-destination: ../italian-teacher-pages/ # Output directory for built site
-production_url: https://italian-teacher.github.io/ # Live site URL
-source_url: https://github.com/italian-teacher/italian-teacher.github.io # Source repository URL
+# username: italian-teacher # GitHub username
+# repo: italian-teacher.github.io # GitHub repository
+# branch: master # Deployment branch
+# relative_source: ../italian-teacher/ # Source directory for build
+# destination: ../italian-teacher-pages/ # Output directory for built site
+# production_url: https://italian-teacher.github.io/ # Live site URL
+# source_url: https://github.com/italian-teacher/italian-teacher.github.io # Source repository URL
 
 # Exclusions
 exclude:
