@@ -1,10 +1,8 @@
 ---
 layout: page
-title: 
+title: Contact Us
 permalink: /contact/
 ---
-
-<h1>Contact Us</h1>
 
 <p>If you have any questions or feedback, feel free to reach out using the form below:</p>
 

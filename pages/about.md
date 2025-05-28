@@ -1,10 +1,8 @@
 ---
 layout: page
-title:
+title: About Us
 permalink: /about/
 ---
-
-# About Us
 
 Welcome to our Italian learning website!
 
