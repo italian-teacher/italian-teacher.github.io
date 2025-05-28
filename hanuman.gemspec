@@ -4,10 +4,10 @@ Gem::Specification.new do |spec|
   spec.name          = "hanuman"
   spec.version       = "0.4.0"
   spec.authors       = ["Parham"]
-  spec.email         = ["Prap.mot@gmail.com"]
+  spec.email         = ["italianteacher.io@gmail.com"]
 
   spec.summary       = %q{A responsive, lightning-fast Jekyll theme built using AMP (Accelerated Mobile Pages) to speed up your blogs and websites.}
-  spec.homepage      = "https://github.com/samanyougarg/hanuman"
+  spec.homepage      = "talian-teacher.github.io"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select do |f|
